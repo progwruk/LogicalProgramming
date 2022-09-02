@@ -8,7 +8,7 @@ namespace LogicalProgram
             Console.WriteLine("Welcome to logical programming");
             while (true)
             { 
-                Console.WriteLine("Select program\n 1. fibonacci series\n 2. perfect number\n 3. prime number\n 4. reverse number\n 5. temperature conversion\n 6.coupon numbers\n 7.monthly payment\n 8.day of week");
+                Console.WriteLine("Select program\n 1. fibonacci series\n 2. perfect number\n 3. prime number\n 4. reverse number\n 5. temperature conversion\n 6.coupon numbers\n 7.monthly payment\n 8.day of week\n 9.stopwatch");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -43,6 +43,10 @@ namespace LogicalProgram
                     case 8:
                         DayOfWeek dayOfWeek = new DayOfWeek();
                         dayOfWeek.Day();
+                        break;
+                    case 9:
+                        StopWatch stopWatch = new StopWatch();
+                        stopWatch.ElapsedTime();
                         break;
                     default:
                         Console.WriteLine("Select correct option");
